@@ -50,3 +50,6 @@ class AccessPoint(models.Model):
     burbot = models.CharField(max_length = 50)
     coordX = models.DecimalField(max_digits=13,decimal_places=10)
     coordY = models.DecimalField(max_digits=13,decimal_places=10)
+    
+    def __str__(self):
+        return self.AccessPoint_text
