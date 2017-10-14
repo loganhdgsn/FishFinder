@@ -1,0 +1,29 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.jumbotron{
+	margin-top: -1%;
+}
+
+.jumbotron h1{
+	padding-left: 40%;
+}
+
+.comment-box {
+	resize:none;
+	border-radius:5px;
+	border:solid 1px lightgrey;
+	width:80%;
+
+}
+
+.glyphicon {
+	position:relative
+	display:inline;
+	border:solid 0px white;
+	background:white;
+	padding:2%;
+	top:-7px;
+	border-radius:5px;
+}

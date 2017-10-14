@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="template_styles.css">
+
+	<meta charset="utf-8">
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-static-top">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+
+      <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">FishFinder</a>
+      </div>
+      <!-- Collection of nav links and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Find a Fishing Spot</a></li>
+          <li><a href="#">Lakes</a></li>
+        </ul>
+      </div>
+    </nav>
+
+	<!-- Lake Name-->
+
+	<div class="jumbotron">
+	  <h1>Lake Name</h1>
+	</div>
+
+  </head>
+
+  <body>
+
+
+    <div class="col-sm-5">.col-sm-4</div>
+
+	<div class="col-sm-3" style="margin-left:-4%;">
+
+
+	  <textarea rows="1" placeholder="How was your trip?" class="comment-box"></textarea>
+	  <button class="glyphicon glyphicon-paperclip"></button>
+	  <button class="glyphicon glyphicon-send"></button>
+	  <div class="media" id="reviews">
+
+	   <div class="panel panel-default">
+		 <div class="media-body">
+		   <h4 class="media-heading">John Doe</h4>
+		   <p>Great Spot! Caught tons of trout here!</p>
+		 </div>
+	   </div>
+
+		 <img src="../resources/fish_pic.jpg" class="img-responsive">
+		 <div class="panel panel-default">
+		   <div class="media-body">
+			 <h4 class="media-heading">Jenny P.</h4>
+			 <p>Look at this fella that I caught!</p>
+		   </div>
+		 </div>
+
+	 </div>
+
+   </div>
+
+
+
+   <div class="row">
+	 <div class="col-sm-4">
+	   <div id="map" style="width:400px;height:400px;margin-left:10%;"></div>
+	   <button type="button" class="btn" style="margin-left:10%">Get Directions</button>
+	   <div style="margin-left:10%">
+		 <h2>General Info</h2>
+		 <p>Depth:</p>
+		 <p>Ramp Type:</p>
+		 <p>Popularity:</p>
+		 <p>Parking:</p>
+		 <p>Access Type:</p>
+	   </div>
+	 </div>
+
+
+
+</div>
+
+
+	<script>
+      var map;
+      function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+      });
+      }
+    </script>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOH8KrygUvrevxmxf-M8K4mqzcNMDQMHs&callback=initMap" async defer></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
